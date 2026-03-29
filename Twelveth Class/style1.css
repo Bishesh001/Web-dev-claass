@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a; /* Dark background for a "Doomsday" feel */
+    height: 200vh; /* Added height just to show the boxes stay fixed while scrolling */
+    font-family: 'Arial Black', gadget, sans-serif;
+}
+
+/* Common style for all corner boxes */
+.box {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+/* Specific Corner Positions and Colors */
+.top-center {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e74c3c; /* Red */
+}
+
+.top-right {
+    top: 20px;
+    right: 20px;
+    background-color: #3498db; /* Blue */
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+    background-color: #f1c40f; /* Yellow */
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
+    background-color: #9b59b6; /* Purple */
+}
+
+/* Centering the "Doomsday" Text */
+.center-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfectly aligns the center of the text to the center of the screen */
+    text-align: center;
+}
+
+.doomsday-text {
+    font-size: 80px;
+    color: #2ecc71; /* Doomsday Green */
+    text-shadow: 0 0 20px #27ae60, 0 0 40px #000;
+    letter-spacing: 10px;
+}
